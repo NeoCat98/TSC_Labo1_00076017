@@ -10,7 +10,7 @@ int main(int argc, char** argv) {
 	zeroes(matrix_a,3);
 	
 	matrix_a.at(0).at(0) = 2; matrix_a.at(0).at(1) = 2; matrix_a.at(0).at(2) = 3;
-	matrix_a.at(1).at(0) = 6; matrix_a.at(1).at(1) = 5; matrix_a.at(1).at(2) = 6;
+	matrix_a.at(1).at(0) = 4; matrix_a.at(1).at(1) = 5; matrix_a.at(1).at(2) = 6;
 	matrix_a.at(2).at(0) = 7; matrix_a.at(2).at(1) = 8; matrix_a.at(2).at(2) = 9;
 
 
