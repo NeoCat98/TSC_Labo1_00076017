@@ -16,14 +16,21 @@ int main(int argc, char** argv) {
 
     //1/|A|
     det = determinant(matrix_a);
-    det = 1 / det;
-    //cof(A)
-    cofactors(matrix_a,matrix_cofactor);
-    //(cof(A))^T
-    transpose(matrix_cofactor,matrix_trans);
-    //(cof(A))^T * (1 / |A|)
-    productRealMatrix(det,matrix_trans,matrix_result);
-
-    //mostrar A^-1
-    showMatrix(matrix_result);
+    if(det == 0){
+    	cout<< "el determinante es 0, no se puede calcular la matriz inversa"<<endl;
+	}
+	else{
+		det = 1 / det;
+    
+	    //cof(A)
+	    cofactors(matrix_a,matrix_cofactor);
+	    //(cof(A))^T
+	    transpose(matrix_cofactor,matrix_trans);
+	    //(cof(A))^T * (1 / |A|)
+	    productRealMatrix(det,matrix_trans,matrix_result);
+	
+	    //mostrar A^-1
+	    showMatrix(matrix_result);
+	}
+	
 }
